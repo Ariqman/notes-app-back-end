@@ -5,7 +5,7 @@ const {
 } = require('./schema');
 const InvariantError = require('../../exceptions/InvariantError');
 
-const AuthsValidator = {
+const AuthValidator = {
   validatePostAuthenticationPayload: (payload) => {
     const validationResult = PostAuthenticationPayloadSchema.validate(payload);
     if (validationResult.error) {
@@ -26,4 +26,4 @@ const AuthsValidator = {
   },
 };
 
-module.exports = AuthsValidator;
+module.exports = AuthValidator;
