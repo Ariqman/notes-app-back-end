@@ -2,3 +2,4 @@ node_modules
 new-notes-app.pem 
 .env
 .prod.env
+src/api/uploads/file
